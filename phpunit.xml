@@ -1,0 +1,16 @@
+<phpunit bootstrap="tests/bootstrap.php">
+    <testsuites>
+        <testsuite name="geo">
+            <directory>tests/unit</directory>
+        </testsuite>
+        <testsuite name="geo_intergration">
+            <directory>tests/integration</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">src/</directory>
+        </whitelist>
+    </filter>
+</phpunit>
